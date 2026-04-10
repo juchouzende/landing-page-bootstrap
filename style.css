@@ -200,3 +200,82 @@ body {
   height: 200px;
   object-fit: cover;
 }
+
+.album-card a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.album-card:hover {
+  transform: scale(1.08);
+}
+
+.album-card h5 {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.album-card {
+  transition: 0.3s;
+}
+
+/* seções novas mais destacadas */
+#impacto .box,
+#homenagem .box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  transition: 0.3s;
+}
+
+#impacto .box:hover,
+#homenagem .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.ratio iframe {
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.cbjr-footer {
+  background: url('assets/footer-banda.jpg') center/cover no-repeat;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+/* overlay escuro para melhorar leitura */
+.cbjr-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.cbjr-footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* texto */
+.cbjr-footer h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.insta-icon {
+  font-size: 40px;
+  color: white;
+  transition: 0.3s;
+}
+
+.insta-icon:hover {
+  transform: scale(1.2);
+  color: #e1306c; /* cor instagram */
+  text-shadow: 0 0 10px rgba(225, 48, 108, 0.7);
+}
